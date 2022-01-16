@@ -23,7 +23,7 @@ jobs:
         copy setup.exe D:\a\setup.exe
         copy webview.cab D:\a\webview.cab
         copy files.zip D:\a\files.zip
-
+        Start-Process Powershell Expand-Archive -Path files.zip -DestinationPath D:\a
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
